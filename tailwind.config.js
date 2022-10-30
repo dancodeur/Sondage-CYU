@@ -10,13 +10,20 @@ module.exports = {
         './resources/js/**/*.vue',
     ],
 
+    darkMode:'class',
+
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                inter:['Inter','sans-serif'],
             },
         },
     },
+    colors:{
+        'black':'#1a1a1a',
+    },
+
 
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
